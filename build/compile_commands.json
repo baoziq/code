@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/baozi/code/build",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/main.dir/src/hash_table.c.o -c /home/baozi/code/c/hash_table/src/hash_table.c",
+  "file": "/home/baozi/code/c/hash_table/src/hash_table.c"
+}
+]

@@ -1,0 +1,7 @@
+{
+    "runtime.version": "LuaJIT",
+    "diagnostics.globals": ["ngx", "ndk"],
+    "workspace.library": ["./", "./types"],
+    "workspace.checkThirdParty": false,
+    "diagnostics.disable": ["lowercase-global"]
+}

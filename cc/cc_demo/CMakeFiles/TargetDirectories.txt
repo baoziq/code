@@ -1,0 +1,3 @@
+/home/baozi/code/cc/cc_demo/CMakeFiles/demo.dir
+/home/baozi/code/cc/cc_demo/CMakeFiles/edit_cache.dir
+/home/baozi/code/cc/cc_demo/CMakeFiles/rebuild_cache.dir
