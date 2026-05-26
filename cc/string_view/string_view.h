@@ -6,11 +6,11 @@ class myStringView {
 public:
     myStringView();
     myStringView(const char* str);
-	myStringView(const char *ptr, uint64_t len);
+	myStringView(const char *ptr, size_t len);
 	~myStringView() = default;
 	size_t size() const;
 	bool empty() const;
-	myStringView substr(size_t start, size_t end) const;
+	myStringView substr(size_t start, size_t len) const;
 	char operator[](size_t index) const;
 	bool start_with(myStringView sv);
 	bool end_with(myStringView sv);

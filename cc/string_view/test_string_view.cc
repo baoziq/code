@@ -94,16 +94,25 @@ void test_no_copy() {
     assert(sv[0] == 'H');
 }
 
+void basic_test() {
+    myStringView sv("hello");
+    assert(sv.substr(5, 0).empty());
+    assert(sv.find(myStringView("")) == 0);
+    assert(sv.start_with(myStringView("")));
+    assert(sv.end_with(myStringView("")));
+    assert(sv.find(myStringView("world")) == myStringView::npos);
+}
+
 int main() {
     test_default_constructor();
     test_c_constructor();
     test_pointer_len_constructor();
-    test_ends_with();
     test_find_char();
-    // test_find_string();
-    // test_ends_with();
+    test_find_string();
+    test_ends_with();
     test_no_copy();
     test_pointer_len_constructor();
     test_substr();
+    basic_test();
     std::cout << "All test passed\n";
 }

@@ -16,4 +16,9 @@ target_compile_options(test_string_view PRIVATE
     -Wextra
     -Werror
     -g
+    -fsanitize=address
+)
+
+target_link_options(test_string_view PRIVATE
+    -fsanitize=address
 )
